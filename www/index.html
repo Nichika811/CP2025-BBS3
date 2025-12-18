@@ -331,6 +331,13 @@ function setTheme(theme){
     localStorage.setItem('bbs-theme',theme);
 }
 
+$(function(){
+    const savedTheme = losalStorage.getItem('bbs-theme');
+    if(savedTheme){
+        setTheme(savedTheme);
+    }
+});
+
     </script>
 </head>
 <body>
