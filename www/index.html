@@ -324,6 +324,13 @@ window.addEventListener('unload', function() {
         postsListener = null;
     }
 });
+
+function setTheme(theme){
+    document.body.className = '';
+    document.body.classList.add(`theme-${theme}`);
+    localStorage.setItem('bbs-theme',theme);
+}
+
     </script>
 </head>
 <body>
